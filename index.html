@@ -6,8 +6,13 @@
 -->
 <html>
 	<head>
+		<script type="text/javascript">
+		    var host = "ariadnaballestar.com";
+		    if ((host == window.location.host) && (window.location.protocol != "https:"))
+		        window.location.protocol = "https";
+		</script>
 		<link rel="canonical" href="https://ariadnaballestar.com">
-
+		
 		<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
 		<link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
 		<link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
@@ -21,6 +26,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
 		<meta name="author" content="Ariadna Ballestar">
 		<meta name="title" content="Ariadna Ballestar Fotografía"/>
@@ -221,16 +230,7 @@
 		</div>
 
 		<!-- Scripts -->
-			<script type="text/javascript">
-			    var host = "ariadnaballestar.com";
-			    if ((host == window.location.host) && (window.location.protocol != "https:"))
-			        window.location.protocol = "https";
-			</script>
-			
-			<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-			<link rel="stylesheet" href="assets/css/main.css" />
-			<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-			<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
 
 
 			<script src="assets/js/jquery.min.js"></script>
