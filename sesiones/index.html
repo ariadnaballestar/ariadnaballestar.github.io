@@ -65,7 +65,7 @@
 								{% for post in site.posts %}
 									<article>
 										<span class="image">
-											<img src="{{ post.baseurl }}/images/{{ post.images }}/portada.jpg" alt="" />
+											<img src="{{ site.baseurl }}/images/{{ post.images }}/portada.jpg" alt="" />
 										</span>
 										<a href="{{ post.url | prepend: site.baseurl }}">
 											<h2>{{ post.title }}</h2>
