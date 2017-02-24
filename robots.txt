@@ -1,4 +1,4 @@
-Sitemap: https://www.ariadnaballestar.com/sitemap.xml
+Sitemap: https://ariadnaballestar.com/sitemap.xml
 Sitemap: https://ariadnaballestar.com/sesiones/sitemap.xml
 User-agent: *
 Disallow:
