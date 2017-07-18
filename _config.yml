@@ -1,6 +1,5 @@
 gems:
   - jekyll-seo-tag
-  # - jekyll-sitemap
 
 url: https://ariadnaballestar.com
 baseurl: ""
@@ -29,3 +28,6 @@ email: info@ariadnaballestar.com
 lang: es_ES
 
 markdown: kramdown
+
+webmaster_verifications:
+  google: wCAUJatFeERGPOT1QzbB82H1bwA1cZUN31DXSsm4vPE
