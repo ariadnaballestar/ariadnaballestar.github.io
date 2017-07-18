@@ -1,3 +1,8 @@
+---
+
+---
+
+
 <!DOCTYPE HTML>
 <!--
 	Landed by HTML5 UP
@@ -6,61 +11,22 @@
 -->
 <html lang="es">
 	<head>
-		<script type="text/javascript">
-		    var host = "ariadnaballestar.com";
-		    if ((host == window.location.host) && (window.location.protocol != "https:"))
-		        window.location.protocol = "https";
-		</script>
-		<link rel="canonical" href="https://ariadnaballestar.com">
-		
-		<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
-		<link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
-		<link rel="manifest" href="/assets/icons/manifest.json">
-		<link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#000000">
-		<link rel="shortcut icon" href="/assets/icons/favicon.ico">
-		<meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
-		<meta name="theme-color" content="#000000">
+		{% seo %}
 
-		<title>Ariadna Ballestar Fotografía</title>
+		{% include protocol.html %}
+		{% include favicons.html %}
+
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
-		<!-- Start mobifyjs -->
-		<script>!function(a,b,c,d,e){function g(a,c,d,e){var f=b.getElementsByTagName("script")[0];a.src=e,a.id=c,a.setAttribute("class",d),f.parentNode.insertBefore(a,f)}a.Mobify={points:[+new Date]};var f=/((; )|#|&|^)mobify=(d)/.exec(location.hash+"; "+b.cookie);if(f&&f[3]){if(!+f[3])return}else if(!c())return;b.write('<plaintext style="display:none">'),setTimeout(function(){var c=a.Mobify=a.Mobify||{};c.capturing=!0;var f=b.createElement("script"),h="mobify",i=function(){var c=new Date;c.setTime(c.getTime()+3e5),b.cookie="mobify=0; expires="+c.toGMTString()+"; path=/",a.location=a.location.href};f.onload=function(){if(e)if("string"==typeof e){var c=b.createElement("script");c.onerror=i,g(c,"main-executable",h,mainUrl)}else a.Mobify.mainExecutable=e.toString(),e()},f.onerror=i,g(f,"mobify-js",h,d)})}(window,document,function(){var a=/webkit|msies10|(firefox)[/s](d+)|(opera)[sS]*version[/s](d+)|3ds/i.exec(navigator.userAgent);return a?a[1]&&+a[2]<4?!1:a[3]&&+a[4]<11?!1:!0:!1},
 
-			// path to mobify.js
-			"https://cdn.mobify.com/mobifyjs/build/mobify-2.0.1.min.js",
-
-			// calls to APIs go here
-			function() {
-			  var capturing = window.Mobify && window.Mobify.capturing || false;
-
-			  if (capturing) {
-			    Mobify.Capture.init(function(capture){
-			      var capturedDoc = capture.capturedDoc;
-
-			      var images = capturedDoc.querySelectorAll("img, picture");
-			      Mobify.ResizeImages.resize(images);
-
-			      // Render source DOM to document
-			      capture.renderCapturedDoc();
-			    });
-			  }
-			});
-		</script>
-		<!-- End mobifyjs -->
-
+		{% include mobify.html %}
 
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
-		<meta name="author" content="Ariadna Ballestar">
-		<meta name="title" content="Ariadna Ballestar Fotografía"/>
 		<meta name="subject" content="Fotografia profesional"/>
-		<meta name="description" content="Fotógrafa profesional en Barcelona y Fraga.  Fotografía de pareja, embarazo, familia, grupos, para regalar y más... Presupuestos adaptados a tus necesidades."/>
 		<meta name="keywords" content="Fotografo barcelona, fotografo Fraga, fotografo bodas barcelona, fotografo bodas fraga, fotografo embarazo barcelona, fotografo pareja barcelona, sesion fotos barcelona, regalo sesion fotos barcelona, fotografo barato barcelona, fotografo economico barcelona, fotografo premama barcelona, fotografo niños barcelona, fotografo niños fraga"/>
 		<meta name="language" content="Spanish"/>
 		<meta name="revisit" content="1 day"/>
@@ -277,15 +243,7 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-			<script>
-			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			  ga('create', 'UA-74180305-1', 'auto');
-			  ga('send', 'pageview');
-
-			</script>
+			
+			{% include google-analytics.html %}
 	</body>
 </html>

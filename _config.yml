@@ -1,2 +1,31 @@
+plugins:
+  - jekyll-seo-tag
+  # - jekyll-sitemap
+
 url: https://ariadnaballestar.com
+baseurl: ""
 enforce_ssl: ariadnaballestar.com
+
+title: Ariadna Ballestar Fotografía
+
+description: Fotógrafa profesional en Barcelona y Fraga. Fotografía de pareja, embarazo, familia, grupos, para regalar y más... Presupuestos adaptados a tus necesidades.
+
+author: Ariadna Ballestar
+
+logo: assets/logos/logo-negro.png
+
+social: 
+  name: Ariadna Ballestar Fotografía
+  links:
+    - https://www.instagram.com/ariadna_ballestar/
+    - https://www.facebook.com/ari.ballestar
+
+facebook:
+  publisher: https://www.facebook.com/ari.ballestar
+
+email: info@ariadnaballestar.com
+
+
+lang: es_ES
+
+markdown: kramdown
