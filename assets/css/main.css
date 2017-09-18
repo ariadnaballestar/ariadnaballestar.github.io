@@ -874,5 +874,5 @@ input[type="button"],
 }
 
 table.centered > * {
-	text-align: left;
+	text-align: center;
 }
