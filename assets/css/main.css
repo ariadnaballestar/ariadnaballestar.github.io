@@ -873,6 +873,6 @@ input[type="button"],
 	height:100%;
 }
 
-table.centered > * {
+table.centered * {
 	text-align: center;
 }
